@@ -9,16 +9,16 @@ create table Cliente (
 	contrasenna VARCHAR(50),
 	telefono VARCHAR(50),
 	direccion VARCHAR(50),
-	PRIMARY KEY(id_cliente, cedula, email)
+	PRIMARY KEY(id_cliente)
 );
 
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (1, '339-11-5109', 'Karlik', 'Lindenberg', 'klindenberg0@latimes.com', 'UhCf2TfkiD', '2269829251', '5 5th Plaza');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (2, '415-12-9231', 'Giavani', 'Alu', 'galu1@slashdot.org', 'sfwWbThHL', '7031282664', '13449 Gale Place');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (3, '272-88-5280', 'Manda', 'Luxon', 'mluxon2@parallels.com', 'X5gXUHLbYxl', '7773827297', '42 Ridgeway Point');
-insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (4, '615-31-8026', 'Gerrilee', 'Matzen', 'gmatzen3@sitemeter.com', 'EUwpqfo', '1934178156', '7 Service Center');
-insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (5, '700-99-2777', 'Brenna', 'Skirven', 'bskirven4@godaddy.com', 'BVJ4WJMM1c', '4325813182', '5648 Jay Way');
-insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (6, '283-62-9138', 'Venus', 'Kingsley', 'vkingsley5@privacy.gov.au', 'xO76RK', '6207530144', '43520 Transport Lane');
-insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (7, '894-15-9337', 'Calley', 'Schulter', 'cschulter6@slideshare.net', 'ndNOxeWRn3', '9874749082', '5 Colorado Drive');
+insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (4, '349-85-2213', 'Wash', 'Hawkeridge', 'whawkeridge3@wsj.com', 'IteQUjtES', '8302163283', '7 Badeau Court');
+insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (5, '147-33-3839', 'Vittorio', 'Grut', 'vgrut4@omniture.com', 'ouPx8cQUr50W', '1429031753', '63254 Sommers Street');
+insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (6, '113-20-8616', 'Marcellin', 'Sinisbury', 'msinisbury5@cloudflare.com', 'aTiblANJX3', '2956330251', ' Sachtjen Park');
+insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (7, '699-22-1372', 'Olivia', 'Howling', 'lhowling6@seesaa.net', '4LADoDUoyZ', '8389134417', '8 Barby Terrace');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (8, '531-40-9524', 'Maison', 'Crucetti', 'mcrucetti7@fc2.com', 'M2eQS2t', '6468402128', '8005 Mariners Cove Alley');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (9, '282-96-9521', 'Abie', 'Speariett', 'aspeariett8@army.mil', 'i1yOnZeOAHO', '4693919692', '76 Arizona Circle');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (10, '878-31-2075', 'Kassie', 'Bolam', 'kbolam9@rakuten.co.jp', 'V1DX7l9', '3404392866', '6 Hansons Crossing');

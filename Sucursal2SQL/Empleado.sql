@@ -9,7 +9,7 @@ create table Empleado (
 	email VARCHAR(50),
 	telefono VARCHAR(50),
 	direccion VARCHAR(50),
-	PRIMARY KEY (id_empleado, carne, cedula)
+	PRIMARY KEY (id_empleado)
 );
 select * from Empleado
 insert into Empleado (id_empleado, carne, cedula, nombre, apellido, email, telefono, direccion) values (1, '58-7191915', '738-65-4923', 'Filbert', 'Arrell', 'farrell0@cnet.com', '1412174980', '6811 Kropf Alley');

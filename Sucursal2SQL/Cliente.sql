@@ -9,14 +9,14 @@ create table Cliente (
 	contrasenna VARCHAR(50),
 	telefono VARCHAR(50),
 	direccion VARCHAR(50),
-	PRIMARY KEY(id_cliente, cedula, email)
+	PRIMARY KEY(id_cliente)
 );
 
 select * from Cliente
 
-insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (1, '146-94-5173', 'Raul', 'Exposito', 'rexposito0@dyndns.org', 'EspyoFqFh6mz', '3142327857', '99435 Milwaukee Trail');
-insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (2, '730-68-2429', 'Merilee', 'Cantor', 'mcantor1@xing.com', 'I5rjVz41h3Z', '7855810312', '09 Haas Center');
-insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (3, '732-71-1512', 'Catarina', 'Camellini', 'ccamellini2@privacy.gov.au', 'gR0YkvEX69F', '7534951451', '2 Express Court');
+insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (1, '828-86-4781', 'Sea', 'McCaughren', 'zmccaughren0@altervista.org', 'lHk0Th', '6885044362', '03265 Thierer Place');
+insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (2, '838-10-3076', 'Neilla', 'Trig', 'ntriggel1@google.com.hk', 'IMBxUhjlO', '5811087372', '911 Homewood Hll');
+insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (3, '899-95-4060', 'Giulia', 'Ahrens', 'gahrens2@xing.com', 'FZ2p7CFuBzA', '3903596493', '17 Surrey Avenue');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (4, '349-85-2213', 'Wash', 'Hawkeridge', 'whawkeridge3@wsj.com', 'IteQUjtES', '8302163283', '7 Badeau Court');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (5, '147-33-3839', 'Vittorio', 'Grut', 'vgrut4@omniture.com', 'ouPx8cQUr50W', '1429031753', '63254 Sommers Street');
 insert into Cliente (id_cliente, cedula, nombre, apellido, email, contrasenna, telefono, direccion) values (6, '113-20-8616', 'Marcellina', 'Sinisbury', 'msinisbury5@cloudflare.com', 'aTiblANJX3', '2956330251', '9 Sachtjen Park');

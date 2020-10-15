@@ -7,7 +7,8 @@ create table Productos (
 	nombre VARCHAR(50),
 	cantidad INT,
 	precio VARCHAR(50),
-	PRIMARY KEY(id_producto, codigo_producto, id_proveedor)
+	PRIMARY KEY(id_producto),
+	CONSTRAINT FK_Producto_Proveedor FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor)
 );
 insert into Productos (id_producto, codigo_producto, id_proveedor, nombre, cantidad, precio) values (1, '9-2351-027-3', 2, 'Food Colouring - Pink', 91, '$64.95');
 insert into Productos (id_producto, codigo_producto, id_proveedor, nombre, cantidad, precio) values (2, '9-0119-604-4', 1, 'Dehydrated Kelp Kombo', 79, '$69.57');

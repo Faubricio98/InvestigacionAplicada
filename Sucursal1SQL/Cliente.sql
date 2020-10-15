@@ -1,4 +1,3 @@
-CREATE DATABASE Sucursal1_B61976
 USE Sucursal1_B61976
 
 create table Cliente (
@@ -10,7 +9,7 @@ create table Cliente (
 	contrasenna VARCHAR(50),
 	telefono VARCHAR(50),
 	direccion VARCHAR(50),
-	PRIMARY KEY(id_cliente, cedula, email)
+	PRIMARY KEY(id_cliente)
 );
 
 select * from Cliente

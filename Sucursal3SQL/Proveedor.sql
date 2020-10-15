@@ -3,7 +3,8 @@ create table Proveedor (
 	nombre VARCHAR(50),
 	email VARCHAR(50),
 	telefono VARCHAR(50),
-	direccion VARCHAR(50)
+	direccion VARCHAR(50),
+	PRIMARY KEY(id_proveedor)
 );
 insert into Proveedor (id_proveedor, nombre, email, telefono, direccion) values (1, 'Ward, Reynolds and Hansen', 'gsherebrook0@dell.com', '2581217708', '794 Golf View Terrace');
 insert into Proveedor (id_proveedor, nombre, email, telefono, direccion) values (2, 'Schinner Inc', 'iiacovelli1@cyberchimps.com', '2332413550', '26822 Hansons Point');

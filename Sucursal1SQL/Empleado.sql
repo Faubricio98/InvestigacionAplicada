@@ -9,7 +9,7 @@ create table Empleado (
 	email VARCHAR(50),
 	telefono VARCHAR(50),
 	direccion VARCHAR(50),
-	PRIMARY KEY (id_empleado, carne, cedula)
+	PRIMARY KEY (id_empleado)
 );
 
 insert into Empleado (id_empleado, carne, cedula, nombre, apellido, email, telefono, direccion) values (1, '66-8248866', '685-86-0321', 'Lauritz', 'Cappleman', 'lcappleman0@phpbb.com', '3608932851', '11 Homewood Way');

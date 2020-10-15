@@ -7,7 +7,8 @@ create table Productos (
 	nombre VARCHAR(50),
 	cantidad INT,
 	precio VARCHAR(50),
-	PRIMARY KEY(id_producto, codigo_producto, id_proveedor)
+	PRIMARY KEY(id_producto),
+	CONSTRAINT FK_Producto_Proveedor FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor)
 );
 
 select * FROM Productos

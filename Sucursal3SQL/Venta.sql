@@ -5,7 +5,11 @@ create table Venta (
 	id_empleado INT,
 	fecha_venta DATE,
 	cantidad_producto INT,
-	costo_venta VARCHAR(50)
+	costo_venta VARCHAR(50),
+	PRIMARY KEY(id_venta),
+	CONSTRAINT FK_Cliente_Venta FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
+	CONSTRAINT FK_Producto_Venta FOREIGN KEY (id_producto) REFERENCES Productos(id_producto),
+	CONSTRAINT FK_Empleado_Venta FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado)
 );
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (1, 28, 21, 8, '2020-03-24 06:46:27', 8, '$58.90');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (2, 17, 15, 4, '2019-11-19 11:45:17', 4, '$23.21');

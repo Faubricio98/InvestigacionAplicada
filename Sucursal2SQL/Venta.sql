@@ -1,3 +1,5 @@
+USE Sucursal2_B61976
+
 create table Venta (
 	id_venta INT,
 	id_cliente INT,
@@ -5,8 +7,13 @@ create table Venta (
 	id_empleado INT,
 	fecha_venta DATE,
 	cantidad_producto INT,
-	costo_venta VARCHAR(50)
+	costo_venta VARCHAR(50),
+	PRIMARY KEY(id_venta),
+	CONSTRAINT FK_Cliente_Venta FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
+	CONSTRAINT FK_Producto_Venta FOREIGN KEY (id_producto) REFERENCES Productos(id_producto),
+	CONSTRAINT FK_Empleado_Venta FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado)
 );
+
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (1, 50, 36, 11, '2019-12-17 06:12:52', 5, '$68.28');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (2, 39, 49, 24, '2020-07-09 06:23:48', 4, '$95.58');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (3, 42, 27, 11, '2019-11-05 21:53:33', 9, '$90.53');
@@ -157,3 +164,4 @@ insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, 
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (148, 54, 48, 11, '2020-01-11 16:32:05', 1, '$73.98');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (149, 13, 20, 6, '2019-11-13 16:23:25', 1, '$12.48');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (150, 17, 15, 2, '2020-02-05 02:55:29', 9, '$95.95');
+select * from Venta

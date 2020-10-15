@@ -1,4 +1,31 @@
 USE Sucursal1_B61976
+
+ALTER TABLE Productos
+ADD CONSTRAINT FK_Producto_Proveedor FOREIGN KEY (id_proveedor) REFERENCES Proveedor(id_proveedor)
+
+ALTER TABLE Venta
+ADD nombre_producto VARCHAR(50);
+BEGIN
+	DECLARE @Q int = 1;
+	DECLARE @NAME VARCHAR(50)
+
+	WHILE @Q<=50 BEGIN
+		SELECT @NAME = nombre 
+		from Productos
+		WHERE id_producto = @Q
+
+		UPDATE Venta
+		SET nombre_producto = @NAME
+		WHERE id_producto = @Q
+
+		SET @Q = @Q + 1
+	END
+END
+select * from Venta
+
+
+
+
 create table Venta (
 	id_venta INT,
 	id_cliente INT,
@@ -7,16 +34,13 @@ create table Venta (
 	fecha_venta DATE,
 	cantidad_producto INT,
 	costo_venta VARCHAR(50),
-	PRIMARY KEY(id_venta, id_cliente, id_producto, id_empleado, fecha_venta),
+	PRIMARY KEY(id_venta),
 	CONSTRAINT FK_Cliente_Venta FOREIGN KEY (id_cliente) REFERENCES Cliente(id_cliente),
 	CONSTRAINT FK_Producto_Venta FOREIGN KEY (id_producto) REFERENCES Productos(id_producto),
 	CONSTRAINT FK_Empleado_Venta FOREIGN KEY (id_empleado) REFERENCES Empleado(id_empleado)
 );
 
-ALTER TABLE Empleado
-ADD CONSTRAINT PK_Empleado PRIMARY KEY (id_empleado);
-ALTER TABLE Empleado
-DROP CONSTRAINT PK__Empleado__ECB7D1A360063838; 
+select * from Venta
 
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (1, 40, 39, 14, '2019-10-28 20:35:29', 10, '$2.80');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (2, 18, 33, 4, '2020-04-11 06:44:26', 8, '$50.36');
@@ -168,4 +192,3 @@ insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, 
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (148, 15, 31, 13, '2019-11-01 01:39:27', 10, '$78.54');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (149, 19, 15, 7, '2020-07-05 17:55:00', 4, '$32.45');
 insert into Venta (id_venta, id_cliente, id_producto, id_empleado, fecha_venta, cantidad_producto, costo_venta) values (150, 47, 18, 3, '2019-12-17 07:52:49', 8, '$9.62');
-select * from Venta
